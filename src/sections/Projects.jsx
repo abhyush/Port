@@ -5,7 +5,7 @@ const projects = [
     title: "LLM openrouter",
     description:
       "LLM Council is a local ChatGPT-style app that queries multiple LLMs via OpenRouter, has them critique/rank each other, and uses a “Chair” model to synthesize a single best final answer.",
-    image: "/projects/project1.png",
+    image: `${import.meta.env.BASE_URL}projects/project1.png`,
     tags: ["Multi-LLM orchestration", "Prompt engineering", "Full-stack web development"],
     link: "https://github.com/abhyush/LLM_openrouter",
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "Automatic Number Plate Recognition",
     description:
       "This project is a real-time Automatic Number Plate Recognition (ANPR) system designed to detect and track vehicle license plates. It uses YOLO for object detection, AWS Kinesis for video streaming, and AWS services like S3, DynamoDB, and Lambda for data storage, processing, and visualization.",
-    image: "/projects/pipeline.jpg",
+    image: `${import.meta.env.BASE_URL}projects/pipeline.jpg`,
     tags: ["AWS", "ETL", "YOLO", "OCR"],
     link: "https://github.com/abhyush/real-time-license-plate-recognition/tree/main",
     github: "#",
@@ -22,16 +22,16 @@ const projects = [
     title: "Gemini LLM Application with Streamlit",
     description:
       "This project demonstrates the use of Google's Gemini Pro language model for an interactive Q&A application. Built with Streamlit, the app allows users to ask questions, receive responses, and maintain a chat history. The Gemini Pro model processes user queries and provides intelligent, conversational responses.",
-    image: "/projects/Gemini_.png",
+    image: `${import.meta.env.BASE_URL}projects/Gemini_.png`,
     tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
+    link: "https://huggingface.co/abhyush",
     github: "#",
   },
   {
     title: "British Airways Reviews Dashboard: Sentiment Analysis & Insights",
     description:
       "Built an interactive Tableau dashboard for British Airways reviews to track service ratings, monthly trends, country-wise performance, and aircraft comparisons with filters for seat type, traveler type, aircraft, and date range (2016–2023).",
-    image: "/projects/Dashboard.png",
+    image: `${import.meta.env.BASE_URL}projects/Dashboard.png`,
     tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
     link: "https://github.com/abhyush/British-Airways-Reviews-Dashboard-Sentiment-Analysis-Insights",
     github: "#",

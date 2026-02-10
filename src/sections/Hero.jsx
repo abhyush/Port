@@ -29,7 +29,7 @@ const socials = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/abhyush/", label: "LinkedIn" },
   // TODO: Replace with your real usernames
   { icon: SiHuggingface, href: "https://huggingface.co/abhyush", label: "Hugging Face" },
-  { icon: SiLeetcode, href: "https://leetcode.com/<your-leetcode-username>", label: "LeetCode" },
+  { icon: SiLeetcode, href: "https://leetcode.com/abhyush27", label: "LeetCode" },
 ];
 
 export const Hero = () => {
@@ -37,11 +37,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
       <div className="absolute inset-0">
-        <img
-          src="/hero-bg.png"
-          alt="Hero background"
-          className="w-full h-full object-cover opacity-40"
-        />
+        
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
       </div>
 
@@ -114,7 +110,7 @@ export const Hero = () => {
               </a>
 
               <a
-                href="/Abhyush_Rajak_Resume.pdf"
+                href={`${import.meta.env.BASE_URL}Abhyush_Rajak_Resume.pdf`}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block"
@@ -152,11 +148,12 @@ export const Hero = () => {
             <div className="relative max-w-md mx-auto">
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
-                <img
-                  src="/Pic.png"
+               <img
+                  src={`${import.meta.env.BASE_URL}Pic.png`}
                   alt="Abhyush Rajak"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
+
 
                 {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
